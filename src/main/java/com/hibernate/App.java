@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class App 
-{
+{  // program for 
     public static void main( String[] args )
     {
     	Configuration cfg=new Configuration().configure().addAnnotatedClass(Question.class);
