@@ -17,7 +17,9 @@
          <mapping class="com.onetoone.Question" /> -->
          <!-- <mapping class="com.onetomany.Answer1" />
          <mapping class="com.onetomany.Question1" /> -->
-         <mapping class="image.and.date.ImageAndData" />
+        <!--  <mapping class="image.and.date.ImageAndData" /> -->
+           <mapping class="com.manytomany.An" />
+            <mapping class="com.manytomany.Qu" />
          
     </session-factory>
 </hibernate-configuration>
