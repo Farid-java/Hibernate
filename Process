@@ -1,0 +1,6 @@
+Step 1 : Jar require => mysql-connector-java , hibernate-core.
+Step 2 : Keep hibernate.cfg.xml in src/main/java folder.if hibernate.cfg.xml file place in some other package then mention those package as:
+         Configuration  con=new Configuration() ;  con.configure("mypackage/hibernate.cfg.xml");
+step 3 :           
+		
+         
