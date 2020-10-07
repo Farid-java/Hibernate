@@ -1,5 +1,6 @@
 package image.and.date;
 
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -17,7 +18,12 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "ImageAndDate")
 public class ImageAndData {
-  public int getStudentid() {
+  @Override
+	public String toString() {
+		return "ImageAndData [studentid=" + studentid + ", studentaddress=" + studentaddress + ", x=" + x + ", date="
+				+ date + ", image=" + Arrays.toString(image) + "]";
+	}
+public int getStudentid() {
 		return studentid;
 	}
 	public void setStudentid(int studentid) {
