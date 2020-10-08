@@ -1,6 +1,6 @@
 Rule 1 : Jar require => mysql-connector-java , hibernate-core.
 Rule 2 : Keep hibernate.cfg.xml in src/main/java folder.if hibernate.cfg.xml file place in some other package then mention those package as:
-         Configuration  con=new Configuration() ;  con.configure("mypackage/hibernate.cfg.xml");
+         Configuration  con=new Configuration() ;  con.configure("mypackage/hibernate.cfg.xml"); remaining code are same.
 Rule 3 :Lazy loading(by default)  in Lazy loading if u fetch data from Db for Question class ( case of one to one mapping) it run query for question class only and when we fetch
         Answer then it run query for Answer table.
 	Eager Loading : But incase of Eager loading when u fetch data from Db for Question class then it run query for both Question class as well as Answer class.
