@@ -45,7 +45,7 @@ System.out.println(uni.getId()+" "+ uni.getName()+" "+uni.getAddress()+" "+uni.g
 //	System.out.println(student.getId()+" "+student.getName()+" "+student.getAddress()+" "+student.getCourse().getCourse()+" "+student.getCourse().getDuration());
 //}
 
-// update data from Db
+// update data to Db
 
 //Query createQuery4 = session.createQuery("update Student set name=:n   where id=:n1 ");
 //createQuery4.setString("n", "Kartik");
@@ -67,7 +67,7 @@ System.out.println(uni.getId()+" "+ uni.getName()+" "+uni.getAddress()+" "+uni.g
 //transaction.commit();
 //session.close();
 
-// execute join query
+// execute join query. Here q and a is known as aliase.
 
 Query createQuery6 = session.createQuery("select q.question_id ,q.question_list , a.answer_list from Question as q INNER JOIN q.answer as a ");
 List<Object[] > li = createQuery6.list();
