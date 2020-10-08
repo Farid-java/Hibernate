@@ -1,4 +1,4 @@
-package com.onetoone;
+package hql;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

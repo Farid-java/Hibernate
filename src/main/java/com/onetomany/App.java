@@ -12,7 +12,7 @@ import org.hibernate.cfg.Configuration;
 public class App {
 	
 public static void main(String[] args) {
-	Configuration cfg=new Configuration().configure().addAnnotatedClass(com.onetomany.Question1.class);
+	Configuration cfg=new Configuration().configure().addAnnotatedClass(com.onetomany.Question1.class).addAnnotatedClass(Answer1.class);
 	SessionFactory sf=cfg.buildSessionFactory();
 	Session session= sf.openSession();
 	System.out.println(session);

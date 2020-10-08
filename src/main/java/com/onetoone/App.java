@@ -10,7 +10,7 @@ import org.hibernate.cfg.Configuration;
 public class App {
 public static void main(String[] args) {
 	// hibernate configuration
-	Configuration cfg=new Configuration().configure().addAnnotatedClass(Question.class);
+	Configuration cfg=new Configuration().configure().addAnnotatedClass(Question.class).addAnnotatedClass(Answer.class);
 	SessionFactory sf=cfg.buildSessionFactory();
 	Session session= sf.openSession();
 	System.out.println(session);

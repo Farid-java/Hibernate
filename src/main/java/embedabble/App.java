@@ -38,21 +38,35 @@ public class App {
 	course1.setDuration("2 month");
 	student1.setCourse(course1);
 	
+	// Third student
+		Student student2=new Student();
+		student2.setName("Rahul");
+		student2.setAddress("Andheri");
+		
+		Course course2=new Course();
+		course2.setCourse("C++");
+		course2.setDuration("1 month");
+		student2.setCourse(course2);
+		
+	
 	
 	Transaction transaction = session.beginTransaction();
 	
-//	session.save(student);
-	//session.save(student1);
-	 Query create= session.createQuery("from Student");
-	 List list = create.list();
-	Iterator iterator = list.iterator();
-	while(iterator.hasNext())
-	{
-		Student next =(Student) iterator.next();
-		System.out.println(next.getId()+" "+next.getName()+" "+next.getAddress()+" "+next.getCourse().getCourse()+" "+next.getCourse().getDuration());
-	}
+	session.save(student);
+	session.save(student1);
+	session.save(student2);
 	
 	transaction.commit();
+	
+	
+	  Query create= session.createQuery("from Student");
+	  List list = create.list();
+	  Iterator iterator = list.iterator(); 
+	  while(iterator.hasNext())
+	  { Student next=(Student) iterator.next();
+	  System.out.println(next.getId()+" "+next.getName()+" "+next.getAddress()+" "
+	  +next.getCourse().getCourse()+" "+next.getCourse().getDuration()); }
+	 
 	
 	
 	 
