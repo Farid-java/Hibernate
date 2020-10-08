@@ -77,7 +77,7 @@ System.out.println(Arrays.toString(arr));
 }
 
 
-// Pagination in HQl
+// Pagination in HQl : it fetch limited amount of row from Db based on starting row of Db(setFirstResult) and number of row of DB(setMaxResults).
 Query createQuery7 = session.createQuery("from Student");
 createQuery7.setFirstResult(0);// it give starting index.
 createQuery7.setMaxResults(2);// it give max limit from 0 index to maximum 1 index
