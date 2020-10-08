@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	System.out.println(student);
 
 	session.close();
-	
+	// data vanished from First Cache but here we use Second Level Cache. which improve performance of Application.
 	Session session1= sf.openSession();
 	
 	Student student1 = (Student) session1.get(Student.class, 1);
