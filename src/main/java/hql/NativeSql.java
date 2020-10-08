@@ -7,7 +7,7 @@ import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
-
+// NativeSql means write SQL Language in Hibernate.
 public class NativeSql {
 	
 	public static void main(String[] args) {
