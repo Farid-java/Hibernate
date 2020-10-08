@@ -4,5 +4,8 @@ Rule 2 : Keep hibernate.cfg.xml in src/main/java folder.if hibernate.cfg.xml fil
 Rule 3 :Lazy loading(by default)  in Lazy loading if u fetch data from Db for Question class ( case of one to one mapping) it run query for question class only and when we fetch
         Answer then it run query for Answer table.
 	Eager Loading : But incase of Eager loading when u fetch data from Db for Question class then it run query for both Question class as well as Answer class.
+Rule 4: Cascading in Hibernate: cascading normally use in one to many ,one to one and many to many etc. here when we save one Bean(Question) into data-base 
+       then automatically other Bean(Answer) save to data-base but we should apply cascading in @onetoone(cascade=CascadeType.All)into first Bean ,here all means u can update
+       delete etc in to first Bean then automatically second Bean updated , deleted of same id. 
 		
          
